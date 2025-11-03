@@ -6,8 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavHeader from './components/Navigation';
 import Home from './components/Home';
 import Imageone from './components/Imageone';
-function App() {
+import Gallery from './components/Gallery';
+import Adobe from './components/Adobe';
+import { useImageProtection } from './hooks/useImageProtection';
 
+function App() {
+  // Initialize global image protection
+  useImageProtection();
 
   return (
     <>
@@ -16,6 +21,8 @@ function App() {
         <Route path="/" element={<NavHeader />}>
           <Route index element={<Home />} />
           <Route path="/:imageno" element={<Imageone />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/Adobe" element={<Adobe />} />
         </Route>
       </Routes>
     </BrowserRouter>

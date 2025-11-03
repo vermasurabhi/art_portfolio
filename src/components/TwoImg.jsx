@@ -12,6 +12,7 @@ import potrait30 from "/illustration/simleflorapattn.png";
 import potrait43 from "/illustration/pattern4.png";
 import Footer from "./Footer";
 import { BackButton } from "./Imageone";
+import ProtectedImage from "./ProtectedImage";
 
 
  const TwoImg = () => {
@@ -21,7 +22,7 @@ import { BackButton } from "./Imageone";
           className={`navlogo px-4 py-5 text-center`}
           style={{ backgroundColor: "#919E89" }}
         >
-          <img
+          <ProtectedImage
             src={potrait27}
             style={{ width: "7rem", maxWidth: "7rem", height: "7rem" }}
             className={`loaddes m-0 mx-auto`}
@@ -35,16 +36,16 @@ import { BackButton } from "./Imageone";
         </div>
         <BackButton>
         <li ><Link to="/image1"  className="my-auto">
-          <img
+          <ProtectedImage
                 src={potrait1}
                 style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
                 className={`loaddes m-0 p-2`}
               /></Link></li>
-              <li ><Link to="/image3"  className="my-auto"><img
+              <li ><Link to="/image3"  className="my-auto"><ProtectedImage
                 src={potrait30}
                 style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
                 className={`loaddes m-0 p-2`}
-              /></Link></li><li ><Link to="/image4"  className="my-auto"><img
+              /></Link></li><li ><Link to="/image4"  className="my-auto"><ProtectedImage
               src={potrait43}
               style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
               className={`loaddes m-0 p-2`}
@@ -57,7 +58,7 @@ import { BackButton } from "./Imageone";
           <div className="row" style={{ maxWidth: "1000px", width: "100%" }}>
             <div className="col-lg-4 col-md-4 col-sm-12 m-0 p-0">
               <div style={{ width: "100%" }}>
-                <img
+                <ProtectedImage
                   src={potrait22}
                   style={{ width: "100%" }}
                   className={`loaddes m-0`}
@@ -65,14 +66,14 @@ import { BackButton } from "./Imageone";
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 m-0 p-0">
-              <img
+              <ProtectedImage
                 src={potrait23}
                 style={{ width: "100%" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 m-0 p-0">
-              <img
+              <ProtectedImage
                 src={potrait24}
                 style={{ width: "100%" }}
                 className={`loaddes m-0`}
@@ -88,7 +89,7 @@ import { BackButton } from "./Imageone";
               style={{ width: "100%" }}
               className="justify-content-center d-flex"
             >
-              <img
+              <ProtectedImage
                 src={potrait21}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
@@ -100,7 +101,7 @@ import { BackButton } from "./Imageone";
               style={{ width: "100%" }}
               className="justify-content-center d-flex"
             >
-              <img
+              <ProtectedImage
                 src={potrait26}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}

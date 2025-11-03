@@ -1,0 +1,201 @@
+/* .cont {
+    position: relative;
+  }
+  
+  .image, .overlayImage {
+    display: block;
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    transition: opacity 0.5s ease;
+  }
+  
+  .overlayImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .cont:hover .overlayImage {
+    opacity: 1;
+  }
+   */
+  /* Uncomment if you want to use the background gradient */
+  /* .backCl {
+    background-color: hsla(0,0%,100%,1);
+    background-image:
+      radial-gradient(at 0% 72%, hsla(18,69%,69%,1) 0px, transparent 50%),
+      radial-gradient(at 67% 88%, hsla(23,78%,81%,1) 0px, transparent 50%),
+      radial-gradient(at 92% 30%, hsla(35,15%,58%,1) 0px, transparent 50%);
+    border-radius: 40px;
+  } */
+/* Pinterest-style masonry gallery */
+.pinterestGallery {
+  column-count: 4;
+  column-gap: 15px;
+  padding: 20px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Responsive column counts */
+@media (max-width: 1200px) {
+  .pinterestGallery {
+    column-count: 3;
+    column-gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pinterestGallery {
+    column-count: 2;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pinterestGallery {
+    column-count: 1;
+    column-gap: 0;
+    padding: 10px;
+  }
+}
+
+/* Individual Pinterest items */
+.pinterestItem {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  page-break-inside: avoid;
+}
+
+/* Image container with hover effects */
+.imageContainer {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.imageContainer:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Gallery images - Pinterest style */
+.galleryImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+/* Pinterest-style overlay */
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.imageContainer:hover .imageOverlay {
+  opacity: 1;
+}
+
+/* Overlay buttons */
+.overlayContent {
+  display: flex;
+  gap: 8px;
+}
+
+.saveBtn,
+.shareBtn {
+  background: #e60023;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shareBtn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+}
+
+.saveBtn:hover {
+  background: #ad081b;
+  transform: scale(1.05);
+}
+
+.shareBtn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+}
+
+/* Alternative: CSS Grid approach (replace the column approach above if preferred) */
+/*
+.pinterestGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
+  grid-auto-rows: 10px;
+  padding: 20px 0;
+}
+
+.pinterestItem {
+  grid-row-end: span var(--grid-rows);
+}
+*/
+
+/* Legacy styles (keeping your original hover effect as alternative) */
+.cont {
+  position: relative;
+}
+
+.image, 
+.overlayImage {
+  display: block;
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.overlayImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.cont:hover .overlayImage {
+  opacity: 1;
+}

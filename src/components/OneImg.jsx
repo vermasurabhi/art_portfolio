@@ -11,6 +11,8 @@ import potrait43 from "/illustration/pattern4.png";
 
 import Footer from "./Footer";
 import { BackButton } from "./Imageone";
+import ProtectedImage from "./ProtectedImage";
+import styles from "./OneImg.module.css";
 
 const OneImg = () => {
     return (
@@ -19,7 +21,7 @@ const OneImg = () => {
           className={`navlogo px-4 py-5 text-center`}
           style={{ backgroundColor: "#97A2AE" }}
         >
-          <img
+          <ProtectedImage
             src={potrait27}
             style={{ width: "7rem", maxWidth: "7rem", height: "7rem" }}
             className={`loaddes m-0 mx-auto`}
@@ -33,32 +35,42 @@ const OneImg = () => {
         </div>
         <BackButton>
         <li ><Link to="/image2"  className="my-auto">
-          <img
+          <ProtectedImage
                 src={potrait255}
                 style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
                 className={`loaddes m-0 p-2`}
               /></Link></li>
-              <li ><Link to="/image3"  className="my-auto"><img
+              <li ><Link to="/image3"  className="my-auto"><ProtectedImage
                 src={potrait30}
                 style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
                 className={`loaddes m-0 p-2`}
-              /></Link></li><li ><Link to="/image4"  className="my-auto"><img
+              /></Link></li><li ><Link to="/image4"  className="my-auto"><ProtectedImage
               src={potrait43}
               style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
               className={`loaddes m-0 p-2`}
             /></Link></li>
         </BackButton>
-         <div className="row m-0 p-0">
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center d-flex m-0 p-0"><img
+         <div className="row m-0 p-0" style={{ width: '100%', margin: '0', padding: '0' }}>
+          {/* First image - Odd (1st) - Left aligned on desktop, centered on mobile */}
+          <div className={`col-lg-12 col-md-12 col-sm-12 col-xs-12 m-0 p-0 ${styles.imageItemLeft}`}>
+            <div className={styles.imageWrapper}>
+              <ProtectedImage
                 src={potrait1}
-                style={{ width: "100%", borderRadius: "20px", maxWidth: "850px", maxHeight: "600px"}}
-                className={`loaddes m-0 p-2`}
-              /></div>
-      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center d-flex m-0 p-0"><img
+                style={{ width: "100%", borderRadius: "20px", maxHeight: "600px", display: "block"}}
+                className={`loaddes m-0`}
+              />
+            </div>
+          </div>
+          {/* Second image - Even (2nd) - Right aligned on desktop, centered on mobile */}
+          <div className={`col-lg-12 col-md-12 col-sm-12 col-xs-12 m-0 p-0 ${styles.imageItemRight}`} style={{ paddingRight: '0', marginRight: '0' }}>
+            <div className={styles.imageWrapper} style={{ marginRight: '0', paddingRight: '0' }}>
+              <ProtectedImage
                 src={potrait2}
-                style={{ width: "100%", borderRadius: "20px", maxWidth: "850px",maxHeight: "600px"}}
-                className={`loaddes m-0 p-2`}
-              /></div>
+                style={{ width: "100%", borderRadius: "20px", maxHeight: "600px", display: "block", marginRight: '0', paddingRight: '0'}}
+                className={`loaddes m-0`}
+              />
+            </div>
+          </div>
          </div>
         <br />
         <br />

@@ -16,6 +16,7 @@ import potrait47 from "/illustration/pattern8.png";
 
 import Footer from "./Footer";
 import { BackButton } from "./Imageone";
+import ProtectedImage from "./ProtectedImage";
 
 const FourImg = () => {
     return (
@@ -24,7 +25,7 @@ const FourImg = () => {
           className={`navlogo px-4 py-5 text-center`}
           style={{ backgroundColor: "#FFDE59" }}
         >
-          <img
+          <ProtectedImage
             src={potrait27}
             style={{ width: "7rem", maxWidth: "7rem", height: "7rem" }}
             className={`loaddes m-0 mx-auto`}
@@ -38,16 +39,16 @@ const FourImg = () => {
         </div>
         <BackButton>
         <li ><Link to="/image1"  className="my-auto">
-          <img
+          <ProtectedImage
                 src={potrait1}
                 style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
                 className={`loaddes m-0 p-2`}
               /></Link></li>
-              <li ><Link to="/image2"  className="my-auto"><img
+              <li ><Link to="/image2"  className="my-auto"><ProtectedImage
                 src={potrait255}
                 style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
                 className={`loaddes m-0 p-2`}
-              /></Link></li><li ><Link to="/image3"  className="my-auto"><img
+              /></Link></li><li ><Link to="/image3"  className="my-auto"><ProtectedImage
               src={potrait30}
               style={{ width: "100%", borderRadius: "50%", maxWidth: "70px",maxHeight: "70px"}}
               className={`loaddes m-0 p-2`}
@@ -59,56 +60,56 @@ const FourImg = () => {
         >
           <div className="row" style={{ maxWidth: "1000px", width: "100%" }}>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait40}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait41}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait42}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait43}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait44}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait45}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait46}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 m-0 p-2 justify-content-center d-flex">
-              <img
+              <ProtectedImage
                 src={potrait47}
                 style={{ width: "100%", borderRadius: "20px", maxWidth: "500px" }}
                 className={`loaddes m-0`}

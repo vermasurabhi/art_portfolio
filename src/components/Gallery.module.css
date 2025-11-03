@@ -1,0 +1,32 @@
+.cont {
+    position: relative;
+  }
+  
+  .image, .overlayImage {
+    display: block;
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    transition: opacity 0.5s ease;
+  }
+  
+  .overlayImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .cont:hover .overlayImage {
+    opacity: 1;
+  }
+  
+  /* Uncomment if you want to use the background gradient */
+  /* .backCl {
+    background-color: hsla(0,0%,100%,1);
+    background-image:
+      radial-gradient(at 0% 72%, hsla(18,69%,69%,1) 0px, transparent 50%),
+      radial-gradient(at 67% 88%, hsla(23,78%,81%,1) 0px, transparent 50%),
+      radial-gradient(at 92% 30%, hsla(35,15%,58%,1) 0px, transparent 50%);
+    border-radius: 40px;
+  } */

@@ -1,16 +1,26 @@
 import styles from "./Home.module.css";
-import pichome from "../assets/peacock.png";
+import pichome from "../../src/illustration/peacock.png";
+import pichome1 from "../../src/illustration/pecock2.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import ProtectedImage from "./ProtectedImage";
+import Navbar from "./Navbar";
 
 function Home() {
   return (
     <>
+    <Navbar />
     <div id="maintext">
       <div className={`container-fluid m-0 p-0 mt-5`}>
         <div className={`${styles.outerdiv} mx-auto`}>
           <div className={`${styles.innerdiv}`}>
-            <img className={`${styles.pic}`} src={pichome} />
+            {/* <img className={`${styles.pic}`} src={pichome} /> */}
+            <div className={styles.flipWrap}>
+  <div className={styles.flipCard}>
+    <ProtectedImage className={styles.flipFront} src={pichome} alt="Front" wrapper={false} />
+    <ProtectedImage className={styles.flipBack} src={pichome1} alt="Back" wrapper={false} />
+  </div>
+</div>
             <div className={`${styles.pic}`} id="maintext">
               <h1 className={`${styles.deco}`}>Dreams</h1>
               <h1 className={`${styles.deco}`}>&</h1>
